@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — LeLau</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <nav>
+    <a class="brand" href="index.html">LeLau</a>
+    <a href="press.html">Press</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">No LeLau account or telemetry server. On-device AI is the default.</p>
+  <p class="muted small">Effective date: August 7, 2026.</p>
+
+  <h2>The short version</h2>
+  <p>The current LeLau app has no account flow, telemetry service, advertising, or monetization. All reasoning happens on your iPhone: prompts, retrieved context, memories, answers, and chat history are not sent to a model service. User-started retrieval and verified downloads are Tor-only and fail closed if Tor is unavailable.</p>
+
+  <h2>What LeLau receives</h2>
+  <p>Nothing is sent to a LeLau account, analytics, advertising, telemetry, or chat server because LeLau operates none of those services. On-device diagnostics stay in local storage until you delete them or choose to export information yourself. We do not build a profile of you.</p>
+  <p>A website, model host, or pack source still receives a retrieval or download request you choose to start and handles that request under its own terms and privacy policy. The returned material is processed locally.</p>
+
+  <h2>Where your data lives</h2>
+  <p>The default local data path stays on your device:</p>
+  <ul>
+    <li>Your conversations are stored locally on your iPhone. Deleting the app deletes them.</li>
+    <li>The reasoning models run on your device. Prompts, retrieved chunks, memories, and generated answers are not sent to LeLau or a third-party model service.</li>
+    <li>Knowledge packs you build or import are stored and searched locally.</li>
+    <li>iOS device backups include LeLau's local data, including conversation history, under Apple's backup encryption. Turn off LeLau in iCloud Backup to exclude it.</li>
+    <li>Older releases could store connection credentials in a dedicated iOS Keychain service. The current app exposes only a one-way cleanup operation for those legacy items.</li>
+  </ul>
+
+  <h2>When LeLau uses the network</h2>
+  <p>Normal chat and all reasoning work with no network. User-started information retrieval and verified downloads use Tor-only transport and fail closed when Tor is unavailable. LeLau never falls back to a direct connection.</p>
+  <ul>
+    <li>Optional model downloads. When you choose to install a model, LeLau requests that model file over Tor so it can run locally afterward. The file host receives the request; LeLau does not.</li>
+    <li>Web sources and web look-up. When you explicitly add a web source or turn on web look-up, LeLau sends the required search or page request over Tor. Naming a draft does not fetch or install a pack. Tor reduces direct network exposure but does not guarantee anonymity. The destination still receives the request content needed to respond.</li>
+    <li>Local processing after retrieval. Search results and fetched pages may be inserted into the local model context, but prompts, local history, pack passages, memories, and answers are never sent back for remote reasoning.</li>
+  </ul>
+
+  <h2>What Tor does and does not do</h2>
+  <p>LeLau routes its supported network requests through the embedded Tor connection. This hides your direct network IP address from the destination, which ordinarily sees a Tor exit address instead.</p>
+  <p>Tor is a privacy layer, not a guarantee of anonymity. It cannot guarantee unlinkability or resistance to timing and traffic-correlation attacks. A retrieval or download destination still receives the request, may know it came through Tor, and may link requests from their content or traffic patterns. LeLau cannot control a third party's retention or use of those requests.</p>
+
+  <h2>Accounts and money</h2>
+  <p>The current app has no LeLau account or sign-in flow. It has no subscriptions, paid packs, in-app purchases, advertising, affiliate sales, or other monetization.</p>
+
+  <h2>Extensions (share, Siri)</h2>
+  <ul>
+    <li>Share and Siri hand content to LeLau locally. Answers are generated locally. If you invoke information retrieval, the same Tor-only destination disclosures apply. Apple's handling of voice input, Siri, and the system share sheet is governed by your device settings and Apple's policies.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>LeLau is not directed at children under 13. It includes always-on on-device content filtering that blocks slurs and hate terms before a query is processed.</p>
+
+  <h2>Your control and deletion</h2>
+  <p>Because your data lives on your device, you are in control:</p>
+  <ul>
+    <li>Delete a conversation in the app to remove it.</li>
+    <li>Delete the app to remove its sandbox, including downloaded models, packs, and conversations. Copies you exported or shared and any legacy account-sync records are outside that sandbox.</li>
+    <li>Current versions do not create LeLau accounts or sync chat history to a LeLau service. If you used an earlier build with optional account or cloud sync, historical records may remain in that legacy service and are not erased by this update or by deleting the app. Email support@lelau.org from the address used for that account to begin a verified export or deletion request.</li>
+    <li>Wipe local data invokes the one-way cleanup for credentials stored by older releases. Retrieval and download requests already received by third-party destinations cannot be erased by LeLau.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>If LeLau's data flows change, we will update this policy and its effective date before describing the new behavior as available.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:support@lelau.org">support@lelau.org</a>.</p>
+</main>
+<footer>&copy; 2026 LeLau. This page mirrors the privacy policy bundled inside the app.</footer>
+</body>
+</html>

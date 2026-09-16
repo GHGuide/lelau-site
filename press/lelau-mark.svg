@@ -1,0 +1,7 @@
+<svg width="180" height="180" viewBox="-172 -172 344 344" xmlns="http://www.w3.org/2000/svg">
+  <mask id="m" maskUnits="userSpaceOnUse" x="-172" y="-172" width="344" height="344">
+    <rect x="-172" y="-172" width="344" height="344" fill="white"/>
+    <g transform="translate(0 40) scale(0.54)"><path d="M0 -158A274 274 0 0 1 137 79A274 274 0 0 1 -137 79A274 274 0 0 1 0 -158Z" fill="black"/></g>
+  </mask>
+  <g transform="scale(1)"><g transform="translate(0 40)" mask="url(#m)"><path d="M0 -158A274 274 0 0 1 137 79A274 274 0 0 1 -137 79A274 274 0 0 1 0 -158Z" fill="#E8795A"/></g></g>
+</svg>
