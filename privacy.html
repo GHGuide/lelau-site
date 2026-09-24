@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - LeLau</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .recipients { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 1rem 0; }
+  .recipients th, .recipients td { text-align: left; vertical-align: top; padding: 0.5rem; border-bottom: 1px solid var(--border); }
+  .recipients a { word-break: break-all; }
+  @media (max-width: 40rem) {
+    .recipients thead { display: none; }
+    .recipients tr { display: block; border: 1px solid var(--border); border-radius: 12px; margin: 0.75rem 0; padding: 0.25rem 0; }
+    .recipients td { display: block; border: 0; padding: 0.2rem 0.75rem; }
+    .recipients td::before { content: attr(data-label) ": "; color: var(--muted); }
+    .recipients td:first-child::before { content: none; }
+    .recipients td:first-child { font-weight: 600; }
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <nav>
+    <a class="brand" href="index.html">LeLau</a>
+    <a href="press.html">Press</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">No LeLau account, analytics or server. Answers are written on this iPhone.</p>
+  <p class="muted small">Effective date: September 24, 2026.</p>
+
+  <h2>The short version</h2>
+  <p>LeLau collects nothing about you. It has no account, no analytics, no telemetry, no advertising and no server of its own. All reasoning happens on your iPhone.</p>
+  <p>A few optional features send a small, specific request to an outside service over Tor. None of these services is an AI service. Each one is listed under "Who receives what" with exactly what it receives and when. The features that send anything are off until you turn them on or confirm them.</p>
+
+  <h2>No third-party AI</h2>
+  <p>LeLau does not use any third-party AI service. Every answer is written on this iPhone, by LeLau's own on-device model or, for some answers given through Siri, Shortcuts, Control Center, Share or Safari on iOS 26 and later, by Apple's on-device model. No question, conversation or file is sent to an AI provider.</p>
+  <p>Standard answers come from Qwen3.5 0.8B (runs on this iPhone), included with the app. The optional High Accuracy model is Gemma 4 E2B (runs on this iPhone), downloaded once if you choose.</p>
+
+  <h2>What LeLau itself collects</h2>
+  <p>Nothing. LeLau has no account or sign-in, no analytics, no telemetry, no advertising and no server, so nothing you type, say, import or ask is sent to us, and we do not build a profile of you. There are no subscriptions, paid packs, in-app purchases or other monetization.</p>
+  <p>Diagnostics the app records stay on this iPhone unless you export them yourself.</p>
+  <p>The only way anything reaches us is an email you choose to send. "Report this response" drafts one in your mail app with the question and the answer; nothing is sent until you send it. We use what you email only to reply.</p>
+
+  <h2>How information gets into LeLau</h2>
+  <p>Everything below is stored and processed on this iPhone:</p>
+  <ul>
+    <li>Typing or pasting a question in chat.</li>
+    <li>Pasting text or importing a PDF to build a pack.</li>
+    <li>The Share extension, when you share selected text to LeLau from another app.</li>
+    <li>The Safari extension, which fills in your selected text (or the page title) as a question you can edit before you ask.</li>
+    <li>Siri, Shortcuts and Control Center. Siri turns your speech into text under Apple's own privacy policy; LeLau receives only the text.</li>
+    <li>A topic name you type or say when you build a pack from Wikipedia.</li>
+  </ul>
+
+  <h2>How LeLau uses it</h2>
+  <ul>
+    <li>Answers on this iPhone. Your question, the matching pack passages and the conversation are used on this iPhone to write the answer. Conversations, packs, memories and search indexes are stored on this iPhone.</li>
+    <li>Web look-up, off by default. When your packs can't answer, LeLau sends a shortened copy of your question over Tor, and for a follow-up your last two questions too. Emails, links, @handles and long numbers are removed first. It goes to Wikipedia (Wikimedia Foundation) and DuckDuckGo for search, to Open-Meteo for weather (only the place name), and to CoinGecko or Frankfurter for prices (only the coin or currency pair). This also applies when you ask LeLau through Siri, Shortcuts, Control Center, Share or Safari. LeLau shows you this and asks you to allow it before look-up turns on.</li>
+    <li>Building a pack from a topic. After you confirm, LeLau searches Wikipedia (Wikimedia Foundation) for the topic over Tor and downloads the matching articles. Only the topic and your phone's language are sent. The pack is built and used on this iPhone.</li>
+    <li>The optional High Accuracy model, only after you tap Download. Downloaded once from Hugging Face (huggingface.co) over Tor. Only the file request is sent, never your questions. Checked against its SHA-256 fingerprint, then runs on this iPhone.</li>
+    <li>Siri suggestions, off by default. If you turn on "Suggest my questions to Siri", LeLau gives iOS the questions you send so Siri can suggest them on the Lock Screen and in Spotlight. iOS keeps these suggestions on this iPhone.</li>
+    <li>Spotlight. LeLau adds the names of your packs to this iPhone's Spotlight index so you can find them in search. The index stays on this iPhone.</li>
+    <li>Home Screen widget. If you turn on "Show recent chat on widget" (off by default), your last exchange appears on the Home Screen, where anyone who sees your screen can read it. It stays on this iPhone.</li>
+    <li>Backups. iOS device backups include LeLau's local data, including conversation history, under Apple's backup encryption.</li>
+  </ul>
+
+  <h2>Who receives what</h2>
+  <p>This is the complete list of parties that can receive anything because of LeLau. LeLau's own network access is Tor-only and fails closed: if Tor is not available, nothing is sent, and LeLau never falls back to a direct connection. Tor hides your IP address from each destination, but the destination still receives the request itself, as listed here.</p>
+  <table class="recipients">
+    <thead><tr><th>Recipient</th><th>What it receives</th><th>When</th><th>Opt-in</th><th>Privacy policy</th></tr></thead>
+    <tbody>
+      <tr><td>Wikimedia Foundation (Wikipedia)</td><td data-label="Receives">During web look-up: the shortened, redacted question, and for a follow-up the last two questions too. When you build a pack from a topic: the topic and your phone's language.</td><td data-label="When">If your packs can't answer and look-up is on, or after you confirm a pack build.</td><td data-label="Opt-in">Yes. Look-up is off by default, and each build asks you to confirm first.</td><td data-label="Privacy policy"><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">https://foundation.wikimedia.org/wiki/Policy:Privacy_policy</a></td></tr>
+      <tr><td>DuckDuckGo</td><td data-label="Receives">The shortened, redacted question, and for a follow-up the last two questions too.</td><td data-label="When">During web look-up, when Wikipedia has little or nothing.</td><td data-label="Opt-in">Yes. Off by default.</td><td data-label="Privacy policy"><a href="https://duckduckgo.com/privacy">https://duckduckgo.com/privacy</a></td></tr>
+      <tr><td>Open-Meteo</td><td data-label="Receives">A place name taken from a weather question, then that place's coordinates. Your device location is never used.</td><td data-label="When">During web look-up, for a weather question.</td><td data-label="Opt-in">Yes. Off by default.</td><td data-label="Privacy policy"><a href="https://open-meteo.com/en/terms">https://open-meteo.com/en/terms</a></td></tr>
+      <tr><td>CoinGecko</td><td data-label="Receives">A coin identifier, such as bitcoin. The request passes through Cloudflare, which serves CoinGecko's API.</td><td data-label="When">During web look-up, for a crypto price question.</td><td data-label="Opt-in">Yes. Off by default.</td><td data-label="Privacy policy"><a href="https://www.coingecko.com/en/privacy">https://www.coingecko.com/en/privacy</a></td></tr>
+      <tr><td>Frankfurter</td><td data-label="Receives">A currency pair, such as EUR and USD. The request passes through Cloudflare, which serves Frankfurter's API.</td><td data-label="When">During web look-up, for an exchange-rate question.</td><td data-label="Opt-in">Yes. Off by default.</td><td data-label="Privacy policy"><a href="https://frankfurter.dev">https://frankfurter.dev</a></td></tr>
+      <tr><td>Hugging Face</td><td data-label="Receives">A request for one model file, which Hugging Face may serve from its download network. No questions and no other user data.</td><td data-label="When">Once, when you tap Download for High Accuracy.</td><td data-label="Opt-in">Yes. Only after you tap Download.</td><td data-label="Privacy policy"><a href="https://huggingface.co/privacy">https://huggingface.co/privacy</a></td></tr>
+      <tr><td>Tor network relays</td><td data-label="Receives">Your IP address reaches the first relay, never the content. No single relay sees both you and what you asked.</td><td data-label="When">Only when look-up is on or a download or pack build runs. Once started, Tor stays connected until LeLau closes.</td><td data-label="Opt-in">Follows the features above.</td><td data-label="Privacy policy"><a href="https://community.torproject.org/relay/types-of-relays/">https://community.torproject.org/relay/types-of-relays/</a></td></tr>
+      <tr><td>Apple</td><td data-label="Receives">Your speech, when you ask LeLau through Siri. Apple turns it into text under its own privacy policy; LeLau receives only the text.</td><td data-label="When">Each time you use Siri with LeLau.</td><td data-label="Opt-in">Your choice to use Siri.</td><td data-label="Privacy policy"><a href="https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/">https://www.apple.com/legal/privacy/data/en/ask-siri-dictation/</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2>How these services treat what they receive</h2>
+  <p>Each service receives only the item listed above, over Tor, with no account, cookie, advertising ID or device identifier from LeLau. Where a request names the app, it names it the same way for every user. The words of a look-up question can still say something about you, which is why they are shortened and cleaned first and why look-up is off until you allow it. This is what each service's own privacy policy says, as checked in September 2026:</p>
+  <ul>
+    <li>Wikimedia Foundation keeps readers' IP addresses and request logs for up to 90 days (up to 180 days when investigating automated traffic, and longer when needed to investigate abuse or security issues), then deletes, aggregates or de-identifies them. It does not sell personal information or share it for marketing. For what LeLau sends, this protects you as well as LeLau's own policy does.</li>
+    <li>DuckDuckGo says it does not store IP addresses with searches and does not build profiles. It keeps search text without identifiers, for a period it does not state. LeLau reaches it through its onion service, so no Tor exit relay is involved. For what LeLau sends, this protects you as well as LeLau's own policy does.</li>
+    <li>Open-Meteo deletes its logs after 90 days, does not link IP addresses to identities, and does not share data or advertise. For what LeLau sends, this protects you as well as LeLau's own policy does.</li>
+    <li>Frankfurter says its API does not collect or log personal data, IP addresses or request URLs. It runs behind Cloudflare, which Frankfurter says gives it only aggregate traffic stats; Cloudflare's own handling falls under Cloudflare's policy. For what LeLau sends, Frankfurter's own service protects you as well as LeLau's own policy does.</li>
+    <li>CoinGecko receives only a public coin name, such as bitcoin, over Tor with no account, cookie or identifier, so no personal data is shared with it or with Cloudflare, which serves its API. Its own privacy policy, linked above, covers how it handles requests.</li>
+    <li>Hugging Face receives no user data from LeLau: only a request for a public model file that is the same for every LeLau user, with no account, token or cookie. Its own privacy policy, linked above, covers how it handles requests.</li>
+    <li>Tor relays are the encrypted transport that carries each request, run by independent volunteers. They see no content: the first relay sees your IP address but not the destination, and the last relay sees the destination but not your IP address. Tor is not a guarantee of anonymity: someone who can watch both ends could link a request to you by its timing and size.</li>
+    <li>Apple handles Siri speech under its own privacy policy, linked in the table above.</li>
+  </ul>
+
+  <h2>How to turn each thing off</h2>
+  <ul>
+    <li>Web look-up: in Chat, tap the chip under the message field that shows "All packs" or a pack name, and turn off "Look things up online". Nothing is sent while it is off.</li>
+    <li>Building from a topic: nothing is sent unless you tap Build on the confirmation. You can delete any pack you built.</li>
+    <li>High Accuracy: nothing is requested from Hugging Face unless you tap Download. Choose Standard in Settings &gt; AI &amp; privacy to stop using it.</li>
+    <li>Siri suggestions: turn off "Suggest my questions to Siri" in Settings &gt; About &gt; Siri. This also removes the suggestions already given to iOS, as do Wipe local data and clearing your chat history.</li>
+    <li>Widget: turn off "Show recent chat on widget" in Settings &gt; About &gt; Widget.</li>
+    <li>Siri and Spotlight: Siri's own settings, and whether LeLau appears in search, are in the iOS Settings app. Deleting a pack removes it from Spotlight.</li>
+    <li>Backups: turn off LeLau in iCloud Backup to leave it out of backups.</li>
+    <li>Everything: Settings &gt; AI &amp; privacy &gt; Advanced &gt; Wipe local data removes conversations, memories and settings (packs and models stay). Deleting the app removes all of it, including models and packs. Copies you exported or shared yourself are outside the app. A request a service has already received cannot be erased by LeLau; how long each service keeps it is described above.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>LeLau is not directed at children under 13. It includes always-on on-device content filtering that blocks slurs and hate terms before a query is processed.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If LeLau's data flows change, we will update this bundled policy and its effective date before describing the new behavior as available.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:support@lelau.org">support@lelau.org</a>.</p>
+</main>
+<footer>&copy; 2026 LeLau. This page mirrors the privacy policy bundled inside the app.</footer>
+</body>
+</html>
