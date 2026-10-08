@@ -1,0 +1,24 @@
+# LeLau
+
+> LeLau ("LeLau: Private Offline AI") is a free iPhone app that answers questions with no internet connection. It searches knowledge packs stored on the phone and writes the answer with an AI model that runs on the phone. No account, no ads, no analytics, no LeLau server.
+
+Key facts:
+
+- Platform: iPhone, iOS 16.4 or later. App Store: https://apps.apple.com/app/id6782919899
+- Price: free. No subscription, no in-app purchases, no ads, no account.
+- Offline: answers work in airplane mode, from on-device knowledge packs and an on-device AI model.
+- Included packs: Survival Guide, Medicine and first aid, Math and Physics, Chemistry, Food water and shelter, Legal. Users add their own packs from PDFs, pasted notes or a Wikipedia topic.
+- Answer models (chosen by the user, run on the iPhone, downloaded once from Hugging Face after the user confirms): Gemma 4 E2B (recommended, needs an iPhone with 8 GB of memory), Granite 4.0 H 1B, Qwen 3.5 0.8B, Llama 3.2, LFM 2.5, SmolLM 3, Ministral 3, MiniCPM 5, Bonsai. Without a model, LeLau quotes matching passages from the packs.
+- Search models built into the app: EmbeddingGemma 2 and mixedbread mxbai-rerank-base-v1.
+- Privacy: App Store label "Data Not Collected". Optional web look-up sends a shortened question over Tor to Wikipedia or DuckDuckGo and can be turned off. Model downloads go directly to Hugging Face by default, or through Tor if the user chooses.
+- Also: Siri ("Hey Siri, ask LeLau"), Home Screen and Lock Screen widgets, Ask LeLau in the Share sheet, LeLau Link (preview) to use LM Studio or Ollama on the user's own computer over Wi-Fi.
+- Limits: the on-device models are small, so answers are shorter than cloud assistants and can be wrong. LeLau says when the packs do not cover a question. It is not a substitute for a doctor or emergency services.
+- Developer: Leonardo Calancea, independent developer, The Hague, Netherlands.
+
+## Pages
+
+- [Home and FAQ](https://lelau.org/): what LeLau does, models, privacy, common questions
+- [Privacy policy](https://lelau.org/privacy.html): every party that can receive anything, and when
+- [Press kit](https://lelau.org/press.html): description, facts, founder, logos, screenshots
+- [Support](https://lelau.org/support.html)
+- [Terms of use](https://lelau.org/terms.html)
